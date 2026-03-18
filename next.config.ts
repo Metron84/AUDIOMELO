@@ -1,0 +1,9 @@
+import type { NextConfig } from 'next';
+import path from 'path';
+
+const nextConfig: NextConfig = {
+  outputFileTracingRoot: path.join(process.cwd()),
+  serverExternalPackages: ['@ffmpeg/ffmpeg', '@ffmpeg/util'],
+};
+
+export default nextConfig;
